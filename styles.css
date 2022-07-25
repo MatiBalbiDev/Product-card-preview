@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: 612px;
+  margin: 10px auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 344px;
+}
+
+.card__first-section {
+  height: 241px;
+}
+.card__first-section__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+}
+
+.card__second-section {
+  margin-top: 0;
+  width: 344px;
+}
+
+.card__second-section__product-type {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin: 18px 24px 8px 24px;
+}
+
+.card__second-section__title {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-size: 2.2em;
+  margin: 0 24px 16px 24px;
+}
+
+.card__second-section__description {
+  color: hsl(228, 12%, 48%);
+  font-family: "Monserrat", sans-serif;
+  font-size: 15px;
+  margin: 24px 33px 48px 24px;
+}
+
+.card__second-section__price {
+  display: flex;
+}
+
+.card__second-section__price__discount {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  margin: 0 25px 0 24px;
+}
+
+.card__second-section__price__value {
+  color: hsl(228, 12%, 48%);
+  font-family: "Monserrat";
+  font-size: 14px;
+  margin: 7px 0 0 0;
+  text-decoration: line-through;
+}
+
+.card__second-section__button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  display: block;
+  font-weight: 700;
+  font-size: 1.1em;
+  height: 50px;
+  margin: auto;
+  width: 296px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.card__second-section__button:hover {
+  cursor: pointer;
+  background-color: hsl(156, 42%, 10%);
+}
+
+.card__second-section__button__icon {
+  margin-right: 12px;
+}
+
+.attribution {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+/*--------------------------------Desktop----------------------------*/
+
+@media (min-width: 620px) {
+  .card {
+    display: flex;
+    height: 450px;
+    margin: 175px auto 75px;
+    width: 600px;
+  }
+
+  .card__first-section {
+    width: 300px;
+  }
+
+  .card__first-section__image {
+    content: url("./images/image-product-desktop.jpg");
+  }
+
+  .card__second-section {
+    width: 300px;
+  }
+
+  .card__second-section__product-type {
+    margin: 32px 24px 16px 24px;
+  }
+
+  .card__second-section__description {
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .card__second-section__price {
+    margin-bottom: 26px;
+  }
+
+  .card__second-section__button {
+    width: 240px;
+  }
+}
